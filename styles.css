@@ -1,0 +1,29 @@
+.parent
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.button
+{  
+    margin-top: 150px;
+   position: absolute;
+}
+
+#result
+{
+    height:100px;
+    width:100px;
+    border-style: double;
+    border-color: tomato;
+    border-radius: 20px;
+}
+
+p
+{
+    text-align: center;
+    margin-top: 40px;
+}

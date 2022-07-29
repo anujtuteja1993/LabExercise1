@@ -71,6 +71,7 @@ body
     background-color: #DDA15E;
 }
 
+/*
 .transform
 {
     animation-name: spin;
@@ -78,6 +79,7 @@ body
     animation-iteration-count: 1;
     animation-timing-function: linear; 
 }
+*/
 
 #roll
 {
@@ -104,6 +106,7 @@ body
     border-color: #606C38;
 }
 
+/*
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -112,3 +115,4 @@ body
         transform:rotate(360deg);
     }
 }
+*/

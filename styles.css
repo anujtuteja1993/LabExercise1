@@ -1,29 +1,114 @@
+#title
+{   display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    color: #283618;
+}
+
+body
+{
+    background-color: #FEFAE0;
+}
+
+.button
+{
+    background-color: #DDA15E;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 75px;
+    color: #283618;
+    box-shadow: 0 4px #606C38;
+}
+
+.button:hover 
+{
+    background-color: #DDA15E;
+}
+
+.button:active 
+{
+    background-color: #DDA15E;
+    box-shadow: 0 2px #606C38;
+    transform: translateY(2px);
+}
+
 .parent
 {   
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-
-.button
-{  
-    margin-top: 150px;
-   position: absolute;
+.buttondiv
+{   
+    margin: 10px auto;
+    align-items: center;
+    position: relative;
+    justify-content: center;
 }
 
-#result
-{
-    height:100px;
-    width:100px;
-    border-style: double;
-    border-color: tomato;
+.diceSelect
+{   display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px auto;
+}
+
+.result
+{   
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+    width:150px;
+    border-style:solid;
+    border-color: #606C38;
     border-radius: 20px;
+    background-color: #DDA15E;
 }
 
-p
+.transform
+{
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+}
+
+#roll
 {
     text-align: center;
-    margin-top: 40px;
+    font-size: 75px;
+    color: #FEFAE0;
+}
+
+#label
+{   margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #283618;
+}
+
+#dice
+{
+    background-color: #FEFAE0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#283618;
+    font-size: 23px;
+    border-radius: 5px;
+    border: solid;
+    border-color: #606C38;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

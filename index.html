@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Virtual Dice Roller</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="parent">
-            <div id="result">
-                <p>Result</p>
-            </div>
-                <div class="button">
-                <button>Roll Dice</button>
-            </div>
+  <head>
+    <title>Virtual Dice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Virtual Dice</h1>
+    <div class="parent">
+      <div class="result">
+        <div>
+            <p id="roll"></p>
         </div>
-    </body>
+    </div>
+    <div class="buttondiv">
+        <button class="button" onclick="dice()">Roll Dice</button>
+    </div>
+    </div>
+    <div class="diceSelect">
+      <label id="label" for="dice">Choose your dice:&nbsp</label>
+      <select name="dice" id="dice">
+        <option value="6">D6</option>
+        <option value="8">D8</option>
+        <option value="10">D10</option>
+        <option value="12">D12</option>
+        <option value="20">D20</option>
+      </select>
+    </div>
+  </body>
+  <script src="dice.js"></script>
 </html>
